@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: transparent; /* Giữ phần nền header trong suốt */
+  padding: 40px 20px; /* Đảm bảo đủ không gian cho các phần tử */
+  color: #b67352; /* Màu chữ đà */
+  text-align: center;
+  height: 300px; /* Chiều cao của header */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Kích thước chữ tiêu đề */
+  font-family: 'Pacifico', cursive;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+header .site-info h1 {
+  font-size: 2.5rem; /* Kích thước chữ tiêu đề */
+  font-family: 'Pacifico', cursive;
+  text-transform: uppercase;
+  margin-bottom: 10px; /* Tạo khoảng cách dưới tiêu đề */
+}
+
+header .site-info p {
+  margin-bottom: 10px; /* Tạo khoảng cách giữa các đoạn văn */
+}
+
+header .site-info b {
+  font-weight: bold;
+}
+
+header .navbar-container {
+  width: 100vw; /* Đảm bảo navbar chiếm 100% chiều rộng màn hình */
+  display: flex; /* Sử dụng flexbox để căn giữa navbar */
+  justify-content: center; /* Căn giữa navbar */
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 92px;
+  margin-left: -20px;
+  display: flex;
+  background-color: #8cb9bd;
+  max-width: 960px;
+}
+header .navbar ul li a {
+  color: #fff; /* Màu chữ trắng cho các liên kết */
+  text-decoration: none;
+  font-size: 1.3rem; /* Kích thước chữ */
+  padding: 10px 20px; /* Tăng padding để làm cho các liên kết lớn hơn */
+  transition: background-color 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+  background-color: #b67352; /* Màu nền khi hover vào link (màu đà) */
+  color: #fff; /* Màu chữ vẫn trắng khi hover */
+  border-radius: 5px;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  margin-top: 0; /* Loại bỏ khoảng cách giữa header và phần main */
+}
+
+.sidebar {
+  flex: 0 0 30%;
+  background-color: #ecb159; /* Màu nền cam vàng cho sidebar */
+  padding: 15px;
+}
+
+.sidebar h2,
+.sidebar h3 {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+}
+
+.sidebar img {
+  max-width: 100%;
+  margin: 10px 0;
+}
+.main-content {
+  flex: 1;
+}
+
+.main-content h2 {
+  margin-top: 5px; /* Giảm khoảng cách giữa tiêu đề và phần trên */
+  font-family: 'Pacifico', cursive;
+  color: #b67352;
+}
+
+.main-content h5 {
+  color: #8cb9bd;
+  font-size: 0.9rem;
+}
+
+.logo img{
+  width: 25px;
+  
+}
+.main-content article:nth-child(2) {
+  margin-top: -10px; /* Giảm khoảng cách giữa bài viết "Form - Biểu mẫu trong CSS" và bài viết trên */
+}
+.main-content img {
+  width: 35%;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+}
+
+.main-content p {
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fefbf6; 
+  margin-top: 20px;
+  border-top: 2px solid #b67352;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #b67352;
+}
